@@ -1,3 +1,5 @@
+import Slider from '../components/slider/slider';
+
 export default {
   title: 'Product',
   name: 'product',
@@ -13,6 +15,10 @@ export default {
       title: 'Price',
       name: 'price',
       type: 'number',
+      options: {
+        range: { min: 0, max: 1000, step: 100 },
+      },
+      inputComponent: Slider,
       validation: Rule => [Rule.required(), Rule.min(0)],
     },
     {
