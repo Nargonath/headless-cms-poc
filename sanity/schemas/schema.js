@@ -7,6 +7,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type';
 import User from './user';
 import Product from './product';
 import Category from './category';
+import LocaleString from './localeString';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -14,5 +15,5 @@ export default createSchema({
   name: 'default',
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([User, Product, Category]),
+  types: schemaTypes.concat([User, Product, Category, LocaleString]),
 });
