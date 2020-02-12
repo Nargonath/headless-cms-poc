@@ -4,3 +4,10 @@
 </div>
 
 <hr>
+
+The Headless CMS used for the PoC are:
+
+- [Sanity](https://www.sanity.io/)
+- [Storyblok](https://www.storyblok.com/)
+- [StrapiJS](https://strapi.io/)
+- [Directus](https://directus.io/)
