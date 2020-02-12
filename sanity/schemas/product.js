@@ -31,7 +31,7 @@ export default {
       title: 'Description',
       name: 'description',
       type: 'array',
-      of: [{ type: 'block' }],
+      of: [{ type: 'block' }, { type: 'category' }],
     },
   ],
 };
