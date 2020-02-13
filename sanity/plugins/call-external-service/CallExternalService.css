@@ -1,0 +1,9 @@
+.container {
+  padding: 10px;
+  text-align: center;
+}
+
+button {
+  color: white;
+  background-color: red;
+}
