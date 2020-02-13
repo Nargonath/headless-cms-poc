@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "categories",
   "info": {
     "name": "Category"
   },
@@ -10,8 +12,10 @@
     "Titre": {
       "type": "string",
       "required": true
+    },
+    "products": {
+      "collection": "product",
+      "via": "category"
     }
-  },
-  "connection": "default",
-  "collectionName": "categories"
+  }
 }
