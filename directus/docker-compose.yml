@@ -11,6 +11,17 @@ services:
     ports:
       - '3307:3306'
 
+  myadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    ports:
+      - '8081:80'
+    environment:
+      MYSQL_ROOT_PASSWORD: 'directus'
+      MYSQL_USER: 'directus'
+      MYSQL_PASSWORD: 'directus'
+      PMA_HOST: 'mysql'
+
   directus:
     image: directus/directus:v8-apache
     ports:
