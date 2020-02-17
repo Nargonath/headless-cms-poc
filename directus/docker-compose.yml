@@ -9,7 +9,7 @@ services:
       MYSQL_PASSWORD: 'directus'
       MYSQL_ROOT_PASSWORD: 'directus'
     ports:
-      - '3306:3306'
+      - '3307:3306'
 
   directus:
     image: directus/directus:v8-apache
@@ -20,7 +20,7 @@ services:
       DIRECTUS_AUTH_PUBLICKEY: 'some random secret'
       DIRECTUS_AUTH_SECRETKEY: 'another random secret'
       DIRECTUS_DATABASE_HOST: 'mysql'
-      DIRECTUS_DATABASE_PORT: '3306'
+      DIRECTUS_DATABASE_PORT: '3307'
       DIRECTUS_DATABASE_NAME: 'directus'
       DIRECTUS_DATABASE_USERNAME: 'directus'
       DIRECTUS_DATABASE_PASSWORD: 'directus'
